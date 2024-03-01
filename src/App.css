@@ -15,7 +15,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 36px 50px;
+    margin: 50px 50px;
     gap: 4em;
 }
 
@@ -33,7 +33,7 @@ header img {
 .header-links a {
     font-family: var(--mainFont);
     font-weight: bold;
-    font-size: 1em;
+    font-size: clamp(1rem, 0.7794rem + 0.3922vw, 1.5rem);
     text-decoration: none;
     color: var(--mainColor);
 }
@@ -52,7 +52,7 @@ header img {
 
     font-family: var(--mainFont);
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: clamp(1.125rem, 0.7941rem + 0.5882vw, 1.5rem);
     text-decoration: none;
     color: var(--mainColor);
     text-align: left;
@@ -75,8 +75,8 @@ header img {
 }
 
 .home-pfp {
- width: 360px;
- height: 360px;
+ width: clamp(18.75rem, 7.7206rem + 19.6078vw, 31.25rem);
+ height: clamp(18.75rem, 7.7206rem + 19.6078vw, 31.25rem);
  border-radius: 100%;
  background-color: var(--secondaryColor);
 }
@@ -119,6 +119,11 @@ header img {
 
 .sobre-intro p {
     text-align: justify;
+    font-size: clamp(1rem, 0.5588rem + 0.7843vw, 1.5rem);
+}
+
+.sobre-main h1 {
+    font-size: clamp(2rem, 1.5588rem + 0.7843vw, 2.5rem);
 }
 
 .sobre-intro p:last-child {
@@ -128,9 +133,11 @@ header img {
 .sobre-intro, .sobre-skills {
     width: 60%;
     min-width: 700px;
-    font-family: var(--mainFont);
-    font-weight: 500;
-    font-size: 1em;
+    font-family: var(--mainFont);   
+}
+
+.sobre-skills img {
+    width: clamp(18.75rem, 13.2353rem + 9.8039vw, 20rem);
 }
 
 /*PROJETOS*/
@@ -141,7 +148,17 @@ header img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: var(--mainFont);
 }
+
+.projetos-intro h1 {
+    font-size: clamp(2rem, 1.5588rem + 0.7843vw, 2.5rem);
+}
+
+.projetos-intro p {
+    font-size: clamp(1rem, 0.5588rem + 0.7843vw, 1.5rem);
+}
+
 
 .projetos-content {
     margin-top: 20px;
@@ -152,14 +169,11 @@ header img {
     justify-content: space-evenly;
     gap: 1em;
     min-width: 700px;
-    font-family: var(--mainFont);
-    font-weight: 500;
-    font-size: 1em;
 }
 
 .projeto {
-    width: 240px;
-    height: 160px;
+    width: clamp(15rem, 11.6912rem + 5.8824vw, 18.75rem);
+    height: clamp(10rem, 6.6912rem + 5.8824vw, 13.75rem);
     border-radius: 1em;
     background-color: var(--secondaryColor);
 }
